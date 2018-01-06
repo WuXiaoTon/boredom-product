@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{
+			text-align: center;
+		}
+		body{
+			background: url(images/1.png);
+		}
+		#explanation{
+			color: gray;
+			border-bottom: dotted;
+			margin-bottom: 50px;
+		}
+		#content{
+			margin:0 auto;
+			background: linear-gradient(to bottom,white,skyblue);
+			width: 300px;
+			line-height: 500px;
+			border: double;
+			filter:alpha(Opacity=60);-moz-opacity:0.8;opacity: 0.9;
+		}
+		#bar{
+			line-height: 200px;
+			top: 50px;
+			left: 50px;
+		}
+		#num{
+			line-height: 50px;
+			padding-bottom: 50px;
+		}
+	</style>
+	<script type="text/javascript">
+		var draw=function lotteryDraw(){
+			var sum=document.getElementById('sum').value;
+			var num=document.getElementById('num');
+			if(sum!=null){
+				var rand=Math.round(Math.random()*(sum-1)+1);
+				num.innerHTML = '<h1 style="color: lightcoral;">'+rand+'</h1>';
+			}
+		}
+	</script>
+	<body>
+		<div id="explanation">
+			此代码应用于2018年1月7日、BiliBili视频av17790138的抽奖
+		</div>
+		<div id="content">
+			<div id="bar">
+				<input type="text" placeholder="请输入楼层数量" id="sum"/>
+				<button onclick="draw()">抽奖</button>
+			</div>
+			<div id="num">
+				<h1 style="color: lightcoral;">··· ···</h1>
+			</div>
+		</div>
+	</body>
+</html>
