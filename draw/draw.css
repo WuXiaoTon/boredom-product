@@ -1,0 +1,29 @@
+
+    *{
+        text-align: center;
+    }
+    body{
+        background: url(images/1.png);
+    }
+    #explanation{
+        color: gray;
+        border-bottom: dotted;
+        margin-bottom: 50px;
+    }
+    #content{
+        margin:0 auto;
+        background: linear-gradient(to bottom,white,skyblue);
+        width: 300px;
+        line-height: 500px;
+        border: double;
+        filter:alpha(Opacity=60);-moz-opacity:0.8;opacity: 0.9;
+    }
+    #bar{
+        line-height: 200px;
+        top: 50px;
+        left: 50px;
+    }
+    #num{
+        line-height: 50px;
+        padding-bottom: 50px;
+    }
