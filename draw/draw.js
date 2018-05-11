@@ -15,7 +15,7 @@ var draw=function lotteryDraw(){
         for(var j=0;j<summ;j++){
             if(arr_t[j]>arr_t[max]){
                 max=j;
-                console.log("already");
+                //console.log("already");
             }
         }
             rand=max+1;
